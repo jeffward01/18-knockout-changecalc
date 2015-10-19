@@ -30,7 +30,7 @@
                             <div class="panel-body">
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-addon" id="sizing-addon1">$</span>
-                                    <input type="text" class="form-control" placeholder="Item Price" aria-describedby="sizing-addon1">
+                                    <input type="text" data-bind="value: dueForSale" class="form-control" placeholder="Item Price" aria-describedby="sizing-addon1">
                                 </div>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                             <div class="panel-body">
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-addon" id="sizing-addon1">$</span>
-                                    <input type="text" class="form-control" placeholder="Amount given" aria-describedby="sizing-addon1">
+                                    <input type="text" class="form-control" data-bind="value: amountReceived" placeholder="Amount given" aria-describedby="sizing-addon1">
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
                             <div class="well well-lg centered">
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-addon" id="sizing-addon1">$</span>
-                                    <input type="text" class="form-control" placeholder="Returned Amount" aria-describedby="sizing-addon1">
+                                    <input type="text" class="form-control" data-bind="value: change" placeholder="Returned Amount" aria-describedby="sizing-addon1">
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                     <div class="col-lg-12">
                         <div class="well well-lg centered">
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-3" data-bind="visible: bills.hundreds() > 0">
                                     <div class="panel panel-success">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Number of $100's</h3>
@@ -111,7 +111,7 @@
                                 <div class="col-md-3">
                                     <div class="panel panel-success">
                                         <div class="panel-heading">
-                                            <h3 class="panel-title"></h3>Number of $20's</h3>
+                                            <h3 class="panel-title">Number of $20's</h3>
                                         </div>
                                         <div class="panel-body">
                                             Panel content
@@ -227,6 +227,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/knockout/dist/knockout.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/data-flow-knockout-controller.js"></script>
 </body>
 
 </html>

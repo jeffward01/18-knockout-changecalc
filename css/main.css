@@ -27,7 +27,11 @@
 }
 
 /*Divider lines*/
-.dividerLine{
-    
-    border-bottom: 5px solid white;
+.module1{
+    padding-bottom: 15px;
+     border-bottom: 2px dotted white;
+}
+.module2{
+    padding-bottom: 15px;
+     border-bottom: 2px dotted white;
 }

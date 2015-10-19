@@ -2,8 +2,9 @@
 <html>
 
 <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Change Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <!--  CSS  -->
@@ -13,7 +14,8 @@
 <body>
     <div class="mainContainer">
         <div class="page-header">
-            <h1>Example page header <small>Subtext for header</small></h1>
+            <h1>Change Calcualtor <small>Built with Knockout.js</small></h1>
+            <small>A project by Jeff Ward</small>
         </div>
         <!--  A Row of 2 Columns  -->
         <div class="row module1">
@@ -21,8 +23,6 @@
             <div class="col-md-6">
                 <div class="page-container">
                     <div class="container-fluid">
-
-
                         <div class="panel panel-primary">
                             <div class="panel-heading">
                                 <h3 class="panel-title">1.) How much is due for the sale?</h3>
@@ -93,103 +93,103 @@
                                             <h3 class="panel-title">Number of $100's</h3>
                                         </div>
                                         <div class="panel-body">
-                                            Panel content
+                                           <span data-bind="text: bills.hundreds "></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3"  data-bind="visible: bills.fifties() > 0">
                                     <div class="panel panel-success">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Number of $50's</h3>
                                         </div>
                                         <div class="panel-body">
-                                            Panel content
+                                            <span data-bind="text: bills.fifties"></span>
                                         </div>
                                     </div>
 
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3" data-bind="visible: bills.twenties() > 0">
                                     <div class="panel panel-success">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Number of $20's</h3>
                                         </div>
                                         <div class="panel-body">
-                                            Panel content
+                                           <span data-bind="text: bills.twenties"></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3" data-bind="visible: bills.tens() > 0">
                                     <div class="panel panel-success">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Number of $10's</h3>
                                         </div>
                                         <div class="panel-body">
-                                            Panel content
+                                            <span data-bind="text: bills.tens"></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-3" data-bind="visible: bills.fives() > 0">
                                     <div class="panel panel-success">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Number of $5's</h3>
                                         </div>
                                         <div class="panel-body">
-                                            Panel content
+                                            <span data-bind="text: bills.fives"></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3" data-bind="visible: bills.ones() > 0">
                                     <div class="panel panel-success">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Number of $1's</h3>
                                         </div>
                                         <div class="panel-body">
-                                            Panel content
+                                            <span data-bind="text: bills.ones"></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3" data-bind="visible: coins.quarters() > 0" >
                                     <div class="panel panel-success">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Number of Quarters</h3>
                                         </div>
                                         <div class="panel-body">
-                                            Panel content
+                                            <span data-bind="text: coins.quarters"></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3" data-bind="visible: coins.dimes() > 0" >
                                     <div class="panel panel-success">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Number of Dimes</h3>
                                         </div>
                                         <div class="panel-body">
-                                            Panel content
+                                              <span data-bind="text: coins.dimes"></span>
                                         </div>
                                     </div>
                                 </div>
                                 <!--                         End Second Row               -->
                             </div>
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-3" data-bind="visible: coins.nickels() > 0" >
                                     <div class="panel panel-success">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Number of Nickels</h3>
                                         </div>
                                         <div class="panel-body">
-                                            Panel content
+                                            <span data-bind="text: coins.nickels"></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3"  data-bind="visible: coins.pennies() > 0" >
                                     <div class="panel panel-success">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Number of Pennies</h3>
                                         </div>
                                         <div class="panel-body">
-                                            Panel content
+                                              <span data-bind="text: coins.pennies"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -226,8 +226,11 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/knockout/dist/knockout.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/data-flow-knockout-controller.js"></script>
+    <script src="js/pageFlow.js"></script>
 </body>
 
 </html>

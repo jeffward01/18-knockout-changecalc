@@ -1,0 +1,33 @@
+/* Page Centering */
+
+.page-container > .container-fluid:first-child {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+/*Page Container CSS */
+
+.page-container .page-bg {
+  padding: 15px;
+  background-color: #EFEFEF;
+}
+
+.centered {
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.mainContainer{
+    padding: 0 20px;
+    
+}
+
+/*Divider lines*/
+.dividerLine{
+    
+    border-bottom: 5px solid white;
+}

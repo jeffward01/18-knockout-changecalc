@@ -1,21 +1,232 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Bootstrap 101 Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<!--  CSS  -->
- <link href="css/main.css" rel="stylesheet">
-  </head>
+    <!--  CSS  -->
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="page-header">
+            <h1>Example page header <small>Subtext for header</small></h1>
+        </div>
+        <!--  A Row of 2 Columns  -->
+        <div class="row module1">
+            <!--  Column 1     -->
+            <div class="col-md-6">
+                <div class="page-container">
+                    <div class="container-fluid">
 
 
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">1.) How much is due for the sale?</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon" id="sizing-addon1">$</span>
+                                    <input type="text" class="form-control" placeholder="Item Price" aria-describedby="sizing-addon1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <body>
-    <h1>Hello, world!</h1>
+            <!--  Column 2      -->
+            <div class="col-md-6">
+                <div class="page-container">
+                    <div class="container-fluid">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">2.) How much is has the customer given you?</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon" id="sizing-addon1">$</span>
+                                    <input type="text" class="form-control" placeholder="Amount given" aria-describedby="sizing-addon1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <!--      Title   -->
+            <div class="col-md-12 ">
+                <h3>Total amount of Change to return</h3>
+                <div row>
+                    <div class="col-lg-12">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6 centered module2">
+                            <div class="well well-lg centered">
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon" id="sizing-addon1">$</span>
+                                    <input type="text" class="form-control" placeholder="Returned Amount" aria-describedby="sizing-addon1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--     Start of Amount returned section       -->
+        <div class="row module2">
+            <!--      Title   -->
+            <div class="col-md-12 ">
+                <h3>Types of change to return</h3>
+                <div row>
+                    <div class="col-lg-12">
+                        <div class="well well-lg centered">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Number of $100's</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            Panel content
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Number of $50's</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            Panel content
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"></h3>Number of $20's</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            Panel content
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Number of $10's</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            Panel content
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Number of $5's</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            Panel content
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Number of $1's</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            Panel content
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Number of Quarters</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            Panel content
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Number of Dimes</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            Panel content
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--                         End Second Row               -->
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Number of Nickels</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            Panel content
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Number of Pennies</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            Panel content
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Panel title</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            Panel content
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Panel title</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            Panel content
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--                         End Second Row               -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/knockout/dist/knockout.js"></script>
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>

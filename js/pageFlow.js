@@ -1,19 +1,21 @@
 
-$(document).ready(function () {
-    alert("jQuery Working!");
-$("#resultsArea").text("");
-    $("#totalChange").change(function () {
-        var TotalchangeElement = $("#totalChange").val();
-
-        while(TotalchangeElement =! undefined)
-            {
-                $("$resultsArea").show();
-            }
-        else {
-            $("#resultsArea").hide();
-        }
-
-    });
 
 
-}); // End Document Readdy
+ $(document).ready(function () {
+      var TotalchangeElement = $("#totalChange").val();
+ if (TotalchangeElement == "" || TotalchangeElement == null) {
+     $("#resultsArea").hide();
+ }
+     alert("jQuery Working!");
+
+     $("#totalChange").change(function () {
+
+
+         if (TotalchangeElement == "") {
+             $("#resultsArea").hide();
+         }
+
+     });
+
+
+ }); // End Document Readdy

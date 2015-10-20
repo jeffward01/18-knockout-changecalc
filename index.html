@@ -81,7 +81,7 @@
             </div>
         </div>
         <!--     Start of Amount returned section       -->
-        <div class="row module2">
+        <div class="row module2" data-bind="visible: change() > 0">
             <!--      Title   -->
             <div class="col-md-12 ">
                 <h3>Types of change to return</h3>
@@ -89,7 +89,8 @@
                     <div class="col-lg-12">
                         <div class="well well-lg centered">
                             <div class="row">
-                                <div class="col-md-4" data-bind="visible: bills.hundreds() > 0">
+                               <div class="centered">
+                                <div class="col-md-4 " data-bind="visible: bills.hundreds() > 0">
                                     <div class="panel panel-success">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">Number of $100's</h3>
@@ -196,7 +197,7 @@
                                     </div>
                                 </div>
                      
-                                <!--                         End Second Row               -->
+                            </div>     <!--                         End Second Row               -->
                         </div>
                         </div>
                     </div>

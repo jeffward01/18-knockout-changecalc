@@ -19,7 +19,7 @@ function MyViewModel() {
 
     self.bills = {
         hundreds: ko.computed(function () {
-            var numOfhundred = Math.floor(self.change/100);
+            var numOfhundred = Math.floor(self.change() /100);
             return numOfhundred;
         }),
         fifties: ko.computed(function () {
